@@ -1,0 +1,115 @@
+{
+  "app": {
+    "title": "SkillChain",
+    "subtitle": "Відкрийте свій шлях кар'єри в ІТ"
+  },
+  "navigation": {
+    "home": "Головна",
+    "careerPaths": "Шляхи кар'єри",
+    "skills": "Навички",
+    "certifications": "Сертифікати",
+    "resources": "Ресурси",
+    "settings": "Налаштування"
+  },
+  "languages": {
+    "pl": "Polski",
+    "en": "English",
+    "de": "Deutsch",
+    "uk": "Українська"
+  },
+  "careerCategories": {
+    "networking": "Комп'ютерні мережі",
+    "programming": "Програмування",
+    "databases": "Бази даних",
+    "projectManagement": "Управління проектами",
+    "cybersecurity": "Кібербезпека",
+    "devops": "DevOps",
+    "aiMl": "Штучний інтелект та машинне навчання"
+  },
+  "common": {
+    "search": "Пошук",
+    "filter": "Фільтр",
+    "save": "Зберегти",
+    "cancel": "Скасувати",
+    "edit": "Редагувати",
+    "delete": "Видалити",
+    "back": "Назад",
+    "next": "Далі",
+    "loading": "Завантаження...",
+    "noResults": "Немає результатів",
+    "viewDetails": "Переглянути деталі",
+    "requiredSkills": "Необхідні навички",
+    "recommendedCourses": "Рекомендовані курси",
+    "careerProgression": "Прогресія кар'єри",
+    "salaryRange": "Діапазон зарплат",
+    "experienceLevel": "Рівень досвіду",
+    "beginner": "Початківець",
+    "intermediate": "Середній",
+    "advanced": "Просунутий",
+    "expert": "Експерт"
+  },
+  "careerPath": {
+    "title": "Шлях кар'єри",
+    "description": "Опис",
+    "requirements": "Вимоги",
+    "jobOutlook": "Перспективи роботи",
+    "positions": "Посади",
+    "skills": "Навички",
+    "certifications": "Сертифікати",
+    "resources": "Ресурси",
+    "relatedPaths": "Пов'язані шляхи"
+  },
+  "jobPosition": {
+    "title": "Посада",
+    "description": "Опис",
+    "responsibilities": "Обов'язки",
+    "requiredSkills": "Необхідні навички",
+    "recommendedCertifications": "Рекомендовані сертифікати",
+    "salaryRange": "Діапазон зарплат",
+    "experienceRequired": "Необхідний досвід"
+  },
+  "skill": {
+    "title": "Навичка",
+    "description": "Опис",
+    "relatedSkills": "Пов'язані навички",
+    "learningResources": "Ресурси для навчання",
+    "requiredFor": "Необхідно для"
+  },
+  "certification": {
+    "title": "Сертифікат",
+    "description": "Опис",
+    "provider": "Провайдер",
+    "difficulty": "Складність",
+    "duration": "Тривалість",
+    "cost": "Вартість",
+    "examDetails": "Деталі іспиту",
+    "prerequisites": "Передумови",
+    "validityPeriod": "Термін дії"
+  },
+  "resource": {
+    "title": "Ресурс",
+    "description": "Опис",
+    "type": "Тип",
+    "author": "Автор",
+    "url": "URL",
+    "relatedSkills": "Пов'язані навички",
+    "relatedCertifications": "Пов'язані сертифікати"
+  },
+  "settings": {
+    "title": "Налаштування",
+    "language": "Мова",
+    "theme": "Тема",
+    "notifications": "Сповіщення",
+    "privacy": "Конфіденційність",
+    "account": "Обліковий запис",
+    "help": "Допомога",
+    "about": "Про програму"
+  },
+  "errors": {
+    "somethingWentWrong": "Щось пішло не так",
+    "pageNotFound": "Сторінку не знайдено",
+    "serverError": "Помилка сервера",
+    "connectionError": "Помилка з'єднання",
+    "tryAgain": "Спробуйте ще раз"
+  }
+}

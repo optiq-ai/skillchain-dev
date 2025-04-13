@@ -1,0 +1,71 @@
+.certifications-page .page-title {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.search-form {
+  max-width: 500px;
+  margin: 0 auto 2rem;
+}
+
+.filters-section h5 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.category-filters, .difficulty-filters {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category-filter-btn, .difficulty-filter-btn {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.certification-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.difficulty-badge {
+  background-color: var(--secondary-color) !important;
+  color: var(--text-color) !important;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+}
+
+.provider {
+  color: var(--light-text-color);
+}
+
+.certification-details .list-group-item {
+  padding: 0.75rem 0;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.certification-details .list-group-item:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .filters-section h5 {
+    font-size: 1rem;
+  }
+  
+  .category-filters, .difficulty-filters {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "app": {
+    "title": "SkillChain",
+    "subtitle": "Discover your IT career path"
+  },
+  "navigation": {
+    "home": "Home",
+    "careerPaths": "Career Paths",
+    "skills": "Skills",
+    "certifications": "Certifications",
+    "resources": "Resources",
+    "settings": "Settings"
+  },
+  "languages": {
+    "pl": "Polski",
+    "en": "English",
+    "de": "Deutsch",
+    "uk": "Українська"
+  },
+  "careerCategories": {
+    "networking": "Computer Networks",
+    "programming": "Programming",
+    "databases": "Databases",
+    "projectManagement": "Project Management",
+    "cybersecurity": "Cybersecurity",
+    "devops": "DevOps",
+    "aiMl": "Artificial Intelligence & Machine Learning"
+  },
+  "common": {
+    "search": "Search",
+    "filter": "Filter",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back",
+    "next": "Next",
+    "loading": "Loading...",
+    "noResults": "No results",
+    "viewDetails": "View details",
+    "requiredSkills": "Required skills",
+    "recommendedCourses": "Recommended courses",
+    "careerProgression": "Career progression",
+    "salaryRange": "Salary range",
+    "experienceLevel": "Experience level",
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced",
+    "expert": "Expert"
+  },
+  "careerPath": {
+    "title": "Career Path",
+    "description": "Description",
+    "requirements": "Requirements",
+    "jobOutlook": "Job outlook",
+    "positions": "Positions",
+    "skills": "Skills",
+    "certifications": "Certifications",
+    "resources": "Resources",
+    "relatedPaths": "Related paths"
+  },
+  "jobPosition": {
+    "title": "Position",
+    "description": "Description",
+    "responsibilities": "Responsibilities",
+    "requiredSkills": "Required skills",
+    "recommendedCertifications": "Recommended certifications",
+    "salaryRange": "Salary range",
+    "experienceRequired": "Experience required"
+  },
+  "skill": {
+    "title": "Skill",
+    "description": "Description",
+    "relatedSkills": "Related skills",
+    "learningResources": "Learning resources",
+    "requiredFor": "Required for"
+  },
+  "certification": {
+    "title": "Certification",
+    "description": "Description",
+    "provider": "Provider",
+    "difficulty": "Difficulty",
+    "duration": "Duration",
+    "cost": "Cost",
+    "examDetails": "Exam details",
+    "prerequisites": "Prerequisites",
+    "validityPeriod": "Validity period"
+  },
+  "resource": {
+    "title": "Resource",
+    "description": "Description",
+    "type": "Type",
+    "author": "Author",
+    "url": "URL",
+    "relatedSkills": "Related skills",
+    "relatedCertifications": "Related certifications"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "notifications": "Notifications",
+    "privacy": "Privacy",
+    "account": "Account",
+    "help": "Help",
+    "about": "About"
+  },
+  "errors": {
+    "somethingWentWrong": "Something went wrong",
+    "pageNotFound": "Page not found",
+    "serverError": "Server error",
+    "connectionError": "Connection error",
+    "tryAgain": "Try again"
+  }
+}

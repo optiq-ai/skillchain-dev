@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  # Frontend service
+  frontend:
+    build:
+      context: ./skillchain-frontend
+      dockerfile: Dockerfile
+    container_name: skillchain-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - skillchain-network
+    restart: unless-stopped
+
+  # Backend service
+  backend:
+    build:
+      context: ./skillchain-backend
+      dockerfile: Dockerfile
+    container_name: skillchain-backend
+    ports:
+      - "3001:3001"
+    depends_on:
+      - postgres
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - DB_USER=postgres
+      - DB_HOST=postgres
+      - DB_NAME=skillchain
+      - DB_PASSWORD=postgres
+      - DB_PORT=5432
+      - CORS_ORIGIN=*
+    networks:
+      - skillchain-network
+    restart: unless-stopped
+
+  # PostgreSQL database
+  postgres:
+    image: postgres:14
+    container_name: skillchain-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=skillchain
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./skillchain-backend/src/db/schema.sql:/docker-entrypoint-initdb.d/1-schema.sql
+      - ./skillchain-backend/src/db/seed.sql:/docker-entrypoint-initdb.d/2-seed.sql
+    networks:
+      - skillchain-network
+    restart: unless-stopped
+
+networks:
+  skillchain-network:
+    driver: bridge
+
+volumes:
+  postgres-data:

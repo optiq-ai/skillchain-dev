@@ -1,0 +1,96 @@
+.career-path-details-page .path-header {
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.path-icon-large {
+  font-size: 3rem;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.career-path-details-page .difficulty-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.career-path-details-page .difficulty-bars {
+  display: flex;
+  margin-top: 8px;
+}
+
+.career-path-details-page .difficulty-bar {
+  height: 10px;
+  width: 30px;
+  margin: 0 3px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.career-path-details-page .difficulty-bar.active {
+  background-color: white;
+}
+
+.position-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.position-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.level-badge {
+  background-color: var(--secondary-color) !important;
+  color: var(--text-color) !important;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+}
+
+.skill-badge {
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+}
+
+.certification-item, .resource-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.certification-item:hover, .resource-item:hover {
+  background-color: var(--secondary-color);
+}
+
+.resource-type-badge {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 0.3rem 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .path-icon-large {
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+  }
+  
+  .career-path-details-page .path-header h1 {
+    font-size: 1.8rem;
+  }
+}

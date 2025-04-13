@@ -1,0 +1,32 @@
+.header {
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.language-dropdown .dropdown-toggle {
+  color: white;
+}
+
+.language-dropdown .dropdown-menu {
+  min-width: 150px;
+}
+
+.language-dropdown .dropdown-item {
+  padding: 0.5rem 1rem;
+}
+
+.language-dropdown .dropdown-item:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}

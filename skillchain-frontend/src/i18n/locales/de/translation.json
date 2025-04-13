@@ -1,0 +1,115 @@
+{
+  "app": {
+    "title": "SkillChain",
+    "subtitle": "Entdecke deinen IT-Karriereweg"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "careerPaths": "Karrierewege",
+    "skills": "Fähigkeiten",
+    "certifications": "Zertifizierungen",
+    "resources": "Ressourcen",
+    "settings": "Einstellungen"
+  },
+  "languages": {
+    "pl": "Polski",
+    "en": "English",
+    "de": "Deutsch",
+    "uk": "Українська"
+  },
+  "careerCategories": {
+    "networking": "Computernetzwerke",
+    "programming": "Programmierung",
+    "databases": "Datenbanken",
+    "projectManagement": "Projektmanagement",
+    "cybersecurity": "Cybersicherheit",
+    "devops": "DevOps",
+    "aiMl": "Künstliche Intelligenz & Maschinelles Lernen"
+  },
+  "common": {
+    "search": "Suchen",
+    "filter": "Filtern",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "loading": "Wird geladen...",
+    "noResults": "Keine Ergebnisse",
+    "viewDetails": "Details anzeigen",
+    "requiredSkills": "Erforderliche Fähigkeiten",
+    "recommendedCourses": "Empfohlene Kurse",
+    "careerProgression": "Karriereentwicklung",
+    "salaryRange": "Gehaltsbereich",
+    "experienceLevel": "Erfahrungsstufe",
+    "beginner": "Anfänger",
+    "intermediate": "Fortgeschritten",
+    "advanced": "Erfahren",
+    "expert": "Experte"
+  },
+  "careerPath": {
+    "title": "Karriereweg",
+    "description": "Beschreibung",
+    "requirements": "Anforderungen",
+    "jobOutlook": "Berufsaussichten",
+    "positions": "Positionen",
+    "skills": "Fähigkeiten",
+    "certifications": "Zertifizierungen",
+    "resources": "Ressourcen",
+    "relatedPaths": "Verwandte Wege"
+  },
+  "jobPosition": {
+    "title": "Position",
+    "description": "Beschreibung",
+    "responsibilities": "Verantwortlichkeiten",
+    "requiredSkills": "Erforderliche Fähigkeiten",
+    "recommendedCertifications": "Empfohlene Zertifizierungen",
+    "salaryRange": "Gehaltsbereich",
+    "experienceRequired": "Erforderliche Erfahrung"
+  },
+  "skill": {
+    "title": "Fähigkeit",
+    "description": "Beschreibung",
+    "relatedSkills": "Verwandte Fähigkeiten",
+    "learningResources": "Lernressourcen",
+    "requiredFor": "Erforderlich für"
+  },
+  "certification": {
+    "title": "Zertifizierung",
+    "description": "Beschreibung",
+    "provider": "Anbieter",
+    "difficulty": "Schwierigkeitsgrad",
+    "duration": "Dauer",
+    "cost": "Kosten",
+    "examDetails": "Prüfungsdetails",
+    "prerequisites": "Voraussetzungen",
+    "validityPeriod": "Gültigkeitsdauer"
+  },
+  "resource": {
+    "title": "Ressource",
+    "description": "Beschreibung",
+    "type": "Typ",
+    "author": "Autor",
+    "url": "URL",
+    "relatedSkills": "Verwandte Fähigkeiten",
+    "relatedCertifications": "Verwandte Zertifizierungen"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "language": "Sprache",
+    "theme": "Thema",
+    "notifications": "Benachrichtigungen",
+    "privacy": "Datenschutz",
+    "account": "Konto",
+    "help": "Hilfe",
+    "about": "Über"
+  },
+  "errors": {
+    "somethingWentWrong": "Etwas ist schiefgelaufen",
+    "pageNotFound": "Seite nicht gefunden",
+    "serverError": "Serverfehler",
+    "connectionError": "Verbindungsfehler",
+    "tryAgain": "Erneut versuchen"
+  }
+}

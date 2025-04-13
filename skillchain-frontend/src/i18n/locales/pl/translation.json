@@ -1,0 +1,115 @@
+{
+  "app": {
+    "title": "SkillChain",
+    "subtitle": "Odkryj swoją ścieżkę kariery w IT"
+  },
+  "navigation": {
+    "home": "Strona główna",
+    "careerPaths": "Ścieżki kariery",
+    "skills": "Umiejętności",
+    "certifications": "Certyfikaty",
+    "resources": "Zasoby",
+    "settings": "Ustawienia"
+  },
+  "languages": {
+    "pl": "Polski",
+    "en": "English",
+    "de": "Deutsch",
+    "uk": "Українська"
+  },
+  "careerCategories": {
+    "networking": "Sieci komputerowe",
+    "programming": "Programowanie",
+    "databases": "Bazy danych",
+    "projectManagement": "Zarządzanie projektami",
+    "cybersecurity": "Cyberbezpieczeństwo",
+    "devops": "DevOps",
+    "aiMl": "Sztuczna inteligencja i uczenie maszynowe"
+  },
+  "common": {
+    "search": "Szukaj",
+    "filter": "Filtruj",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "edit": "Edytuj",
+    "delete": "Usuń",
+    "back": "Powrót",
+    "next": "Dalej",
+    "loading": "Ładowanie...",
+    "noResults": "Brak wyników",
+    "viewDetails": "Zobacz szczegóły",
+    "requiredSkills": "Wymagane umiejętności",
+    "recommendedCourses": "Polecane kursy",
+    "careerProgression": "Ścieżka rozwoju",
+    "salaryRange": "Zakres zarobków",
+    "experienceLevel": "Poziom doświadczenia",
+    "beginner": "Początkujący",
+    "intermediate": "Średniozaawansowany",
+    "advanced": "Zaawansowany",
+    "expert": "Ekspert"
+  },
+  "careerPath": {
+    "title": "Ścieżka kariery",
+    "description": "Opis",
+    "requirements": "Wymagania",
+    "jobOutlook": "Perspektywy zawodowe",
+    "positions": "Stanowiska",
+    "skills": "Umiejętności",
+    "certifications": "Certyfikaty",
+    "resources": "Zasoby",
+    "relatedPaths": "Powiązane ścieżki"
+  },
+  "jobPosition": {
+    "title": "Stanowisko",
+    "description": "Opis",
+    "responsibilities": "Obowiązki",
+    "requiredSkills": "Wymagane umiejętności",
+    "recommendedCertifications": "Polecane certyfikaty",
+    "salaryRange": "Zakres zarobków",
+    "experienceRequired": "Wymagane doświadczenie"
+  },
+  "skill": {
+    "title": "Umiejętność",
+    "description": "Opis",
+    "relatedSkills": "Powiązane umiejętności",
+    "learningResources": "Zasoby do nauki",
+    "requiredFor": "Wymagana dla"
+  },
+  "certification": {
+    "title": "Certyfikat",
+    "description": "Opis",
+    "provider": "Dostawca",
+    "difficulty": "Poziom trudności",
+    "duration": "Czas trwania",
+    "cost": "Koszt",
+    "examDetails": "Szczegóły egzaminu",
+    "prerequisites": "Wymagania wstępne",
+    "validityPeriod": "Okres ważności"
+  },
+  "resource": {
+    "title": "Zasób",
+    "description": "Opis",
+    "type": "Typ",
+    "author": "Autor",
+    "url": "URL",
+    "relatedSkills": "Powiązane umiejętności",
+    "relatedCertifications": "Powiązane certyfikaty"
+  },
+  "settings": {
+    "title": "Ustawienia",
+    "language": "Język",
+    "theme": "Motyw",
+    "notifications": "Powiadomienia",
+    "privacy": "Prywatność",
+    "account": "Konto",
+    "help": "Pomoc",
+    "about": "O aplikacji"
+  },
+  "errors": {
+    "somethingWentWrong": "Coś poszło nie tak",
+    "pageNotFound": "Strona nie znaleziona",
+    "serverError": "Błąd serwera",
+    "connectionError": "Błąd połączenia",
+    "tryAgain": "Spróbuj ponownie"
+  }
+}

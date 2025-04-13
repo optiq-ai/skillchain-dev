@@ -1,0 +1,60 @@
+.settings-page .page-title {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.settings-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.settings-section-title {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.settings-section-description {
+  color: var(--light-text-color);
+  margin-bottom: 1.5rem;
+}
+
+.language-options, .theme-options {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.language-option-btn, .theme-option-btn {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1.5rem;
+}
+
+.about-info {
+  background-color: var(--secondary-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.about-info p {
+  margin-bottom: 0.5rem;
+}
+
+.about-info p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .settings-section-title {
+    font-size: 1.2rem;
+  }
+  
+  .language-options, .theme-options {
+    justify-content: flex-start;
+  }
+}

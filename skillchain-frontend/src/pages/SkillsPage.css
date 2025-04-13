@@ -1,0 +1,108 @@
+.skills-page .page-title {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.search-form {
+  max-width: 500px;
+  margin: 0 auto 2rem;
+}
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.category-filter-btn {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.skill-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category {
+  margin-top: 0.5rem;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.category-badge.technical {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.category-badge.soft {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+.category-badge.certification {
+  background-color: #fff3e0;
+  color: #f57c00;
+}
+
+.difficulty-indicator {
+  margin-top: 1rem;
+}
+
+.difficulty-indicator small {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--light-text-color);
+}
+
+.difficulty-bars {
+  display: flex;
+}
+
+.difficulty-bar {
+  height: 8px;
+  width: 20%;
+  margin-right: 4px;
+  border-radius: 4px;
+  background-color: var(--border-color);
+}
+
+.difficulty-bar.active {
+  background-color: var(--primary-color);
+}
+
+.related-paths h6 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.related-path-item {
+  padding: 0.5rem 0;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.related-path-item:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .category-filters {
+    justify-content: flex-start;
+  }
+}
