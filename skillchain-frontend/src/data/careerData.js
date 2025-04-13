@@ -5,6 +5,7 @@ import projectManagementPath from './project_management_career_path.md';
 import cybersecurityPath from './cybersecurity_career_path.md';
 import devopsPath from './devops_career_path.md';
 import aiMlPath from './ai_ml_career_path.md';
+import financeCareerData from './financeCareerData';
 
 const careerPaths = [
   {
@@ -62,6 +63,15 @@ const careerPaths = [
     path: aiMlPath,
     icon: 'brain',
     color: '#d35400'
+  },
+  {
+    id: 'finance',
+    title: 'Finanse',
+    description: 'Ścieżka kariery w branży finansowej, od poziomu początkującego do C-level, obejmująca różne specjalizacje.',
+    path: null,
+    icon: 'money-bill-wave',
+    color: '#2E7D32',
+    data: financeCareerData
   }
 ];
 
