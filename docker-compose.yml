@@ -7,7 +7,7 @@ services:
       context: ./skillchain-frontend
       dockerfile: Dockerfile
     ports:
-      - "3000:80"
+      - "3005:80"  # Zmieniono z 3000 na 3005
     depends_on:
       - backend
     environment:
@@ -22,7 +22,7 @@ services:
       context: ./skillchain-backend
       dockerfile: Dockerfile
     ports:
-      - "3001:3001"
+      - "3006:3001"  # Zmieniono z 3001 na 3006
     depends_on:
       - db
     environment:
@@ -41,7 +41,7 @@ services:
   db:
     image: postgres:14
     ports:
-      - "5432:5432"
+      - "5433:5432"  # Zmieniono z 5432 na 5433
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
