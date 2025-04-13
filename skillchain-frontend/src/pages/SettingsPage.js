@@ -119,8 +119,8 @@ const SettingsPage = () => {
                 
                 <div className="about-info">
                   <p><strong>Wersja:</strong> 1.0.0</p>
-                  <p><strong>Autorzy:</strong> Zespół SkillChain</p>
-                  <p><strong>Kontakt:</strong> contact@skillchain.example.com</p>
+                  <p><strong>Autorzy:</strong> Szamani.AI</p>
+                  <p><strong>Kontakt:</strong> ai@optiq.net.pl</p>
                 </div>
               </Card.Body>
             </Card>

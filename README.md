@@ -2,6 +2,11 @@
 
 Ten dokument zawiera instrukcje dotyczące uruchomienia aplikacji SkillChain w środowisku lokalnym oraz za pomocą Portainera.
 
+## Informacje o aplikacji
+- **Wersja:** 1.0.0
+- **Autorzy:** Szamani.AI
+- **Kontakt:** ai@optiq.net.pl
+
 ## Uruchomienie lokalne
 
 ### Wymagania wstępne
