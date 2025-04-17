@@ -101,16 +101,296 @@ const CareerPathDetailsPage = () => {
         // Próba znalezienia ścieżki kariery w careerPaths
         const foundPath = careerPaths.find(path => path.id === id);
         if (foundPath) {
-          // Konwersja do formatu oczekiwanego przez komponent
-          setCareerPath({
-            id: foundPath.id,
-            category: foundPath.id,
-            icon: foundPath.icon,
-            color: foundPath.color,
-            difficulty: 3,
-            title: foundPath.title,
-            description: foundPath.description
-          });
+          // Pobierz dane z pliku markdown
+          fetch(foundPath.path)
+            .then(response => response.text())
+            .then(markdownContent => {
+              // Parsowanie markdown do struktury danych
+              // Dla uproszczenia, używamy podstawowej struktury
+              const positions = [];
+              const certifications = [];
+              
+              // Dodajemy dane dla wszystkich ścieżek kariery
+              if (id === 'programming') {
+                positions.push(
+                  {
+                    id: 1,
+                    title: 'Frontend Developer',
+                    level: 'beginner',
+                    salaryRange: '5,000 - 9,000 PLN',
+                    skills: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Responsive Design', 'TypeScript', 'Redux', 'GraphQL'],
+                    description: 'Frontend developer zajmuje się projektowaniem i implementacją wizualnej części strony internetowej lub aplikacji.'
+                  },
+                  {
+                    id: 2,
+                    title: 'Backend Developer',
+                    level: 'intermediate',
+                    salaryRange: '9,000 - 16,000 PLN',
+                    skills: ['Python', 'Java', 'Node.js', 'SQL', 'REST API', 'Microservices', 'Docker', 'Kubernetes'],
+                    description: 'Backend developer odpowiada za tzw. wnętrze strony internetowej lub aplikacji - to, czego użytkownik nie widzi.'
+                  },
+                  {
+                    id: 3,
+                    title: 'Full Stack Developer',
+                    level: 'advanced',
+                    salaryRange: '16,000 - 25,000 PLN',
+                    skills: ['Frontend', 'Backend', 'DevOps', 'Architektura aplikacji', 'Bazy danych', 'Cloud Computing', 'System Design'],
+                    description: 'Fullstack developer to specjalista, który posiada umiejętności zarówno frontendowe, jak i backendowe.'
+                  }
+                );
+                
+                certifications.push(
+                  { name: 'React - Meta React Professional Certificate', provider: 'Meta', difficulty: 'intermediate' },
+                  { name: 'AWS Certified Developer - Associate', provider: 'Amazon', difficulty: 'intermediate' },
+                  { name: 'Certified Kubernetes Administrator (CKA)', provider: 'CNCF', difficulty: 'advanced' },
+                  { name: 'Google Associate Cloud Engineer', provider: 'Google', difficulty: 'intermediate' },
+                  { name: 'Oracle Certified Professional, Java SE Developer', provider: 'Oracle', difficulty: 'advanced' },
+                  { name: 'Microsoft Certified: Azure Developer Associate', provider: 'Microsoft', difficulty: 'intermediate' },
+                  { name: 'Certified Web3 Developer', provider: 'Blockchain Council', difficulty: 'advanced' }
+                );
+              } else if (id === 'network') {
+                positions.push(
+                  {
+                    id: 1,
+                    title: 'Network Administrator',
+                    level: 'beginner',
+                    salaryRange: '6,000 - 9,000 PLN',
+                    skills: ['TCP/IP', 'Routing', 'Switching', 'Network Security', 'Troubleshooting'],
+                    description: 'Odpowiada za codzienne zarządzanie siecią komputerową, w tym konfigurację, monitorowanie i rozwiązywanie problemów.'
+                  },
+                  {
+                    id: 2,
+                    title: 'Network Engineer',
+                    level: 'intermediate',
+                    salaryRange: '10,000 - 15,000 PLN',
+                    skills: ['CCNA/CCNP', 'VPN', 'Firewalls', 'Load Balancing', 'Network Design'],
+                    description: 'Projektuje, implementuje i optymalizuje sieci komputerowe, zapewniając ich wydajność, bezpieczeństwo i skalowalność.'
+                  },
+                  {
+                    id: 3,
+                    title: 'Network Architect',
+                    level: 'advanced',
+                    salaryRange: '16,000 - 25,000 PLN',
+                    skills: ['Enterprise Networking', 'Cloud Networking', 'Network Virtualization', 'SD-WAN', 'Strategic Planning'],
+                    description: 'Tworzy kompleksowe projekty sieci dla organizacji, planuje długoterminowe strategie rozwoju infrastruktury sieciowej.'
+                  }
+                );
+                
+                certifications.push(
+                  { name: 'Cisco CCNA', provider: 'Cisco', difficulty: 'beginner' },
+                  { name: 'Cisco CCNP Enterprise', provider: 'Cisco', difficulty: 'intermediate' },
+                  { name: 'Cisco CCIE Enterprise', provider: 'Cisco', difficulty: 'advanced' },
+                  { name: 'CompTIA Network+', provider: 'CompTIA', difficulty: 'beginner' },
+                  { name: 'Juniper JNCIA', provider: 'Juniper', difficulty: 'beginner' }
+                );
+              } else if (id === 'database') {
+                positions.push(
+                  {
+                    id: 1,
+                    title: 'Database Administrator',
+                    level: 'beginner',
+                    salaryRange: '7,000 - 11,000 PLN',
+                    skills: ['SQL', 'MySQL', 'PostgreSQL', 'Backup & Recovery', 'Performance Tuning'],
+                    description: 'Odpowiada za instalację, konfigurację, aktualizację i zabezpieczanie systemów baz danych.'
+                  },
+                  {
+                    id: 2,
+                    title: 'Database Developer',
+                    level: 'intermediate',
+                    salaryRange: '11,000 - 18,000 PLN',
+                    skills: ['SQL', 'PL/SQL', 'Stored Procedures', 'Database Design', 'ETL'],
+                    description: 'Projektuje i implementuje struktury baz danych, zapytania i procedury.'
+                  },
+                  {
+                    id: 3,
+                    title: 'Data Architect',
+                    level: 'advanced',
+                    salaryRange: '18,000 - 28,000 PLN',
+                    skills: ['Data Modeling', 'Big Data', 'Data Warehousing', 'NoSQL', 'Data Governance'],
+                    description: 'Projektuje kompleksowe rozwiązania bazodanowe dla organizacji, tworzy strategie zarządzania danymi.'
+                  }
+                );
+                
+                certifications.push(
+                  { name: 'Oracle Database SQL Certified Associate', provider: 'Oracle', difficulty: 'beginner' },
+                  { name: 'Microsoft Certified: Azure Database Administrator Associate', provider: 'Microsoft', difficulty: 'intermediate' },
+                  { name: 'MongoDB Certified DBA Associate', provider: 'MongoDB', difficulty: 'intermediate' },
+                  { name: 'AWS Certified Database - Specialty', provider: 'Amazon', difficulty: 'advanced' },
+                  { name: 'Certified Data Management Professional (CDMP)', provider: 'DAMA', difficulty: 'advanced' }
+                );
+              } else if (id === 'project-management') {
+                positions.push(
+                  {
+                    id: 1,
+                    title: 'Project Manager',
+                    level: 'beginner',
+                    salaryRange: '8,000 - 14,000 PLN',
+                    skills: ['Zarządzanie projektami', 'MS Project', 'Komunikacja', 'Dokumentacja projektowa', 'Raportowanie'],
+                    description: 'Odpowiada za planowanie, realizację i zamknięcie projektów IT zgodnie z wymaganiami, budżetem i harmonogramem.'
+                  },
+                  {
+                    id: 2,
+                    title: 'Scrum Master',
+                    level: 'intermediate',
+                    salaryRange: '12,000 - 18,000 PLN',
+                    skills: ['Scrum', 'Agile', 'Facylitacja', 'Usuwanie przeszkód', 'Coaching zespołu'],
+                    description: 'Wspiera zespół w stosowaniu metodyki Scrum, usuwa przeszkody i facylituje wydarzenia scrumowe.'
+                  },
+                  {
+                    id: 3,
+                    title: 'Product Owner',
+                    level: 'advanced',
+                    salaryRange: '15,000 - 25,000 PLN',
+                    skills: ['Zarządzanie produktem', 'Backlog produktu', 'Priorytetyzacja', 'Analiza biznesowa', 'UX'],
+                    description: 'Definiuje wizję produktu, zarządza backlogiem i priorytetyzuje funkcjonalności w oparciu o wartość biznesową.'
+                  }
+                );
+                
+                certifications.push(
+                  { name: 'Project Management Professional (PMP)', provider: 'PMI', difficulty: 'advanced' },
+                  { name: 'Certified ScrumMaster (CSM)', provider: 'Scrum Alliance', difficulty: 'beginner' },
+                  { name: 'Professional Scrum Product Owner (PSPO)', provider: 'Scrum.org', difficulty: 'intermediate' },
+                  { name: 'PRINCE2 Foundation & Practitioner', provider: 'AXELOS', difficulty: 'intermediate' },
+                  { name: 'PMI Agile Certified Practitioner (PMI-ACP)', provider: 'PMI', difficulty: 'intermediate' }
+                );
+              } else if (id === 'cybersecurity') {
+                positions.push(
+                  {
+                    id: 1,
+                    title: 'Security Analyst',
+                    level: 'beginner',
+                    salaryRange: '7,000 - 12,000 PLN',
+                    skills: ['Analiza zagrożeń', 'SIEM', 'Monitoring bezpieczeństwa', 'Reagowanie na incydenty', 'Skanowanie podatności'],
+                    description: 'Monitoruje systemy pod kątem zagrożeń bezpieczeństwa, analizuje incydenty i wdraża środki zaradcze.'
+                  },
+                  {
+                    id: 2,
+                    title: 'Penetration Tester',
+                    level: 'intermediate',
+                    salaryRange: '12,000 - 20,000 PLN',
+                    skills: ['Ethical Hacking', 'Testy penetracyjne', 'Narzędzia bezpieczeństwa', 'Analiza podatności', 'Socjotechnika'],
+                    description: 'Przeprowadza kontrolowane ataki na systemy w celu identyfikacji i naprawy luk w zabezpieczeniach.'
+                  },
+                  {
+                    id: 3,
+                    title: 'Security Architect',
+                    level: 'advanced',
+                    salaryRange: '18,000 - 30,000 PLN',
+                    skills: ['Architektura bezpieczeństwa', 'Zarządzanie ryzykiem', 'Compliance', 'Cloud Security', 'Zero Trust'],
+                    description: 'Projektuje kompleksowe rozwiązania bezpieczeństwa dla organizacji, tworzy strategie i polityki bezpieczeństwa.'
+                  }
+                );
+                
+                certifications.push(
+                  { name: 'CompTIA Security+', provider: 'CompTIA', difficulty: 'beginner' },
+                  { name: 'Certified Ethical Hacker (CEH)', provider: 'EC-Council', difficulty: 'intermediate' },
+                  { name: 'Certified Information Systems Security Professional (CISSP)', provider: 'ISC2', difficulty: 'advanced' },
+                  { name: 'Offensive Security Certified Professional (OSCP)', provider: 'Offensive Security', difficulty: 'advanced' },
+                  { name: 'Certified Cloud Security Professional (CCSP)', provider: 'ISC2', difficulty: 'advanced' }
+                );
+              } else if (id === 'devops') {
+                positions.push(
+                  {
+                    id: 1,
+                    title: 'DevOps Engineer',
+                    level: 'beginner',
+                    salaryRange: '8,000 - 14,000 PLN',
+                    skills: ['CI/CD', 'Docker', 'Git', 'Linux', 'Automatyzacja'],
+                    description: 'Wdraża praktyki DevOps, automatyzuje procesy CI/CD i zarządza infrastrukturą.'
+                  },
+                  {
+                    id: 2,
+                    title: 'Site Reliability Engineer',
+                    level: 'intermediate',
+                    salaryRange: '14,000 - 22,000 PLN',
+                    skills: ['Kubernetes', 'Monitoring', 'Infrastruktura jako kod', 'Cloud', 'Rozwiązywanie problemów'],
+                    description: 'Zapewnia niezawodność, skalowalność i wydajność systemów produkcyjnych.'
+                  },
+                  {
+                    id: 3,
+                    title: 'DevOps Architect',
+                    level: 'advanced',
+                    salaryRange: '20,000 - 30,000 PLN',
+                    skills: ['Architektura systemów', 'Multi-cloud', 'Bezpieczeństwo DevOps', 'Strategia DevOps', 'Optymalizacja kosztów'],
+                    description: 'Projektuje kompleksowe rozwiązania DevOps dla organizacji, tworzy strategie transformacji DevOps.'
+                  }
+                );
+                
+                certifications.push(
+                  { name: 'AWS Certified DevOps Engineer - Professional', provider: 'Amazon', difficulty: 'advanced' },
+                  { name: 'Certified Kubernetes Administrator (CKA)', provider: 'CNCF', difficulty: 'intermediate' },
+                  { name: 'Microsoft Certified: DevOps Engineer Expert', provider: 'Microsoft', difficulty: 'advanced' },
+                  { name: 'Docker Certified Associate', provider: 'Docker', difficulty: 'intermediate' },
+                  { name: 'Terraform Associate', provider: 'HashiCorp', difficulty: 'intermediate' }
+                );
+              } else if (id === 'ai-ml') {
+                positions.push(
+                  {
+                    id: 1,
+                    title: 'Data Scientist',
+                    level: 'beginner',
+                    salaryRange: '10,000 - 16,000 PLN',
+                    skills: ['Python', 'R', 'SQL', 'Statystyka', 'Wizualizacja danych'],
+                    description: 'Analizuje dane, buduje modele statystyczne i uczenia maszynowego, wyciąga wnioski z danych.'
+                  },
+                  {
+                    id: 2,
+                    title: 'Machine Learning Engineer',
+                    level: 'intermediate',
+                    salaryRange: '15,000 - 25,000 PLN',
+                    skills: ['Deep Learning', 'TensorFlow/PyTorch', 'MLOps', 'Przetwarzanie danych', 'Wdrażanie modeli'],
+                    description: 'Projektuje, buduje i wdraża modele uczenia maszynowego do zastosowań produkcyjnych.'
+                  },
+                  {
+                    id: 3,
+                    title: 'AI Researcher',
+                    level: 'advanced',
+                    salaryRange: '25,000 - 40,000 PLN',
+                    skills: ['Zaawansowane algorytmy ML', 'NLP', 'Computer Vision', 'Reinforcement Learning', 'Publikacje naukowe'],
+                    description: 'Prowadzi badania nad nowymi algorytmami i metodami sztucznej inteligencji, publikuje prace naukowe.'
+                  }
+                );
+                
+                certifications.push(
+                  { name: 'TensorFlow Developer Certificate', provider: 'Google', difficulty: 'intermediate' },
+                  { name: 'AWS Certified Machine Learning - Specialty', provider: 'Amazon', difficulty: 'advanced' },
+                  { name: 'Microsoft Certified: Azure AI Engineer Associate', provider: 'Microsoft', difficulty: 'intermediate' },
+                  { name: 'IBM AI Engineering Professional Certificate', provider: 'IBM', difficulty: 'intermediate' },
+                  { name: 'Deep Learning Specialization', provider: 'Coursera/DeepLearning.AI', difficulty: 'intermediate' }
+                );
+              }
+              
+              // Konwersja do formatu oczekiwanego przez komponent
+              setCareerPath({
+                id: foundPath.id,
+                category: foundPath.id,
+                icon: foundPath.icon,
+                color: foundPath.color,
+                difficulty: 3,
+                title: foundPath.title,
+                description: foundPath.description,
+                positions: positions,
+                certifications: certifications,
+                resources: [
+                  { type: 'book', title: 'Profesjonalny przewodnik po ' + foundPath.title, author: 'Ekspert Branżowy' },
+                  { type: 'course', title: 'Kurs ' + foundPath.title + ' od podstaw', platform: 'Udemy' },
+                  { type: 'website', title: 'Dokumentacja ' + foundPath.title, url: 'https://example.com/' + foundPath.id }
+                ]
+              });
+            })
+            .catch(error => {
+              console.error('Error loading markdown:', error);
+              // Fallback w przypadku błędu
+              setCareerPath({
+                id: foundPath.id,
+                category: foundPath.id,
+                icon: foundPath.icon,
+                color: foundPath.color,
+                difficulty: 3,
+                title: foundPath.title,
+                description: foundPath.description
+              });
+            });
         } else {
           // Fallback do starych danych
           setCareerPath(careerPathsData[id]);
