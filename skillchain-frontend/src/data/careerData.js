@@ -6,6 +6,7 @@ import cybersecurityPath from './cybersecurity_career_path.md';
 import devopsPath from './devops_career_path.md';
 import aiMlPath from './ai_ml_career_path.md';
 import financeCareerData from './financeCareerData';
+import marketingCareerData from './marketingCareerData';
 
 const careerPaths = [
   {
@@ -72,6 +73,15 @@ const careerPaths = [
     icon: 'money-bill-wave',
     color: '#2E7D32',
     data: financeCareerData
+  },
+  {
+    id: 'marketing',
+    title: 'Marketing',
+    description: 'Ścieżka kariery w branży marketingowej, od asystenta marketingu po dyrektora marketingu (CMO).',
+    path: null,
+    icon: 'bullhorn',
+    color: '#E91E63',
+    data: marketingCareerData
   }
 ];
 
