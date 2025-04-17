@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { Container, Row, Col, Card, Button, Form, Badge } from 'react-bootstrap';
 import { useLocation, Link } from 'react-router-dom';
 import './CareerPathsPage.css';
+import careerPaths from '../data/careerData';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const CareerPathsPage = () => {
   const { t } = useTranslation();
@@ -10,75 +12,12 @@ const CareerPathsPage = () => {
   const [activeCategory, setActiveCategory] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   
-  // Przykładowe dane ścieżek kariery
-  const careerCategories = [
-    { id: 'networking', icon: '🌐', color: '#4285F4' },
-    { id: 'programming', icon: '💻', color: '#34A853' },
-    { id: 'databases', icon: '🗄️', color: '#FBBC05' },
-    { id: 'projectManagement', icon: '📊', color: '#EA4335' },
-    { id: 'cybersecurity', icon: '🔒', color: '#8E44AD' },
-    { id: 'devops', icon: '⚙️', color: '#F39C12' },
-    { id: 'aiMl', icon: '🧠', color: '#1ABC9C' }
-  ];
-  
-  const careerPaths = [
-    {
-      id: 1,
-      category: 'networking',
-      icon: '🌐',
-      color: '#4285F4',
-      difficulty: 3,
-      positions: ['Network Administrator', 'Network Engineer', 'Network Architect'],
-    },
-    {
-      id: 2,
-      category: 'programming',
-      icon: '💻',
-      color: '#34A853',
-      difficulty: 4,
-      positions: ['Frontend Developer', 'Backend Developer', 'Full Stack Developer'],
-    },
-    {
-      id: 3,
-      category: 'databases',
-      icon: '🗄️',
-      color: '#FBBC05',
-      difficulty: 3,
-      positions: ['Database Administrator', 'Database Developer', 'Data Architect'],
-    },
-    {
-      id: 4,
-      category: 'projectManagement',
-      icon: '📊',
-      color: '#EA4335',
-      difficulty: 2,
-      positions: ['Project Manager', 'Scrum Master', 'Product Owner'],
-    },
-    {
-      id: 5,
-      category: 'cybersecurity',
-      icon: '🔒',
-      color: '#8E44AD',
-      difficulty: 4,
-      positions: ['Security Analyst', 'Penetration Tester', 'Security Architect'],
-    },
-    {
-      id: 6,
-      category: 'devops',
-      icon: '⚙️',
-      color: '#F39C12',
-      difficulty: 4,
-      positions: ['DevOps Engineer', 'Site Reliability Engineer', 'Cloud Engineer'],
-    },
-    {
-      id: 7,
-      category: 'aiMl',
-      icon: '🧠',
-      color: '#1ABC9C',
-      difficulty: 5,
-      positions: ['Data Scientist', 'Machine Learning Engineer', 'AI Researcher'],
-    }
-  ];
+  // Generowanie kategorii na podstawie zaimportowanych ścieżek kariery
+  const careerCategories = careerPaths.map(path => ({
+    id: path.id,
+    icon: path.icon,
+    color: path.color
+  }));
 
   useEffect(() => {
     // Pobierz kategorię z parametrów URL
@@ -91,13 +30,54 @@ const CareerPathsPage = () => {
 
   // Filtrowanie ścieżek kariery
   const filteredPaths = careerPaths.filter(path => {
-    const matchesCategory = activeCategory ? path.category === activeCategory : true;
+    const matchesCategory = activeCategory ? path.id === activeCategory : true;
     const matchesSearch = searchTerm 
-      ? t(`careerCategories.${path.category}`).toLowerCase().includes(searchTerm.toLowerCase()) ||
-        path.positions.some(pos => pos.toLowerCase().includes(searchTerm.toLowerCase()))
+      ? path.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        path.description.toLowerCase().includes(searchTerm.toLowerCase())
       : true;
     return matchesCategory && matchesSearch;
   });
+
+  // Funkcja do określania poziomu trudności na podstawie ścieżki kariery
+  const getDifficulty = (path) => {
+    // Domyślnie zwracamy 3 (średni poziom trudności)
+    return 3;
+  };
+
+  // Funkcja do pobierania pozycji z ścieżki kariery
+  const getPositions = (path) => {
+    // Jeśli ścieżka ma dane w nowym formacie (finanse)
+    if (path.data && path.data.levels) {
+      // Pobierz pozycje z pierwszych trzech poziomów
+      const positions = [];
+      for (let i = 0; i < Math.min(3, path.data.levels.length); i++) {
+        if (path.data.levels[i].positions && path.data.levels[i].positions.length > 0) {
+          positions.push(path.data.levels[i].positions[0]);
+        }
+      }
+      return positions;
+    }
+    
+    // Dla starych ścieżek kariery, zwracamy domyślne pozycje
+    switch(path.id) {
+      case 'network':
+        return ['Network Administrator', 'Network Engineer', 'Network Architect'];
+      case 'programming':
+        return ['Frontend Developer', 'Backend Developer', 'Full Stack Developer'];
+      case 'database':
+        return ['Database Administrator', 'Database Developer', 'Data Architect'];
+      case 'project-management':
+        return ['Project Manager', 'Scrum Master', 'Product Owner'];
+      case 'cybersecurity':
+        return ['Security Analyst', 'Penetration Tester', 'Security Architect'];
+      case 'devops':
+        return ['DevOps Engineer', 'Site Reliability Engineer', 'Cloud Engineer'];
+      case 'ai-ml':
+        return ['Data Scientist', 'Machine Learning Engineer', 'AI Researcher'];
+      default:
+        return ['Junior Specialist', 'Senior Specialist', 'Manager'];
+    }
+  };
 
   return (
     <div className="career-paths-page">
@@ -134,8 +114,8 @@ const CareerPathsPage = () => {
               onClick={() => setActiveCategory(category.id)}
               style={{ borderColor: category.color, color: activeCategory === category.id ? 'white' : category.color }}
             >
-              <span className="category-icon-small">{category.icon}</span>
-              {t(`careerCategories.${category.id}`)}
+              <FontAwesomeIcon icon={category.icon} className="me-2" />
+              {careerPaths.find(path => path.id === category.id)?.title || category.id}
             </Button>
           ))}
         </div>
@@ -151,9 +131,9 @@ const CareerPathsPage = () => {
                       className="path-icon"
                       style={{ backgroundColor: path.color }}
                     >
-                      {path.icon}
+                      <FontAwesomeIcon icon={path.icon} />
                     </div>
-                    <Card.Title>{t(`careerCategories.${path.category}`)}</Card.Title>
+                    <Card.Title>{path.title}</Card.Title>
                     
                     <div className="difficulty-indicator mb-3">
                       <small>{t('common.experienceLevel')}:</small>
@@ -161,15 +141,15 @@ const CareerPathsPage = () => {
                         {[...Array(5)].map((_, i) => (
                           <div 
                             key={i} 
-                            className={`difficulty-bar ${i < path.difficulty ? 'active' : ''}`}
-                            style={{ backgroundColor: i < path.difficulty ? path.color : 'var(--border-color)' }}
+                            className={`difficulty-bar ${i < getDifficulty(path) ? 'active' : ''}`}
+                            style={{ backgroundColor: i < getDifficulty(path) ? path.color : 'var(--border-color)' }}
                           />
                         ))}
                       </div>
                     </div>
                     
                     <div className="positions-list mb-3">
-                      {path.positions.map((position, index) => (
+                      {getPositions(path).map((position, index) => (
                         <Badge 
                           key={index} 
                           bg="light" 
