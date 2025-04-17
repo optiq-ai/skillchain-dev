@@ -26,10 +26,22 @@ const financeCareerData = {
         "Dokładność i dbałość o szczegóły",
         "Umiejętności komunikacyjne",
         "Zdolność do pracy w zespole",
-        "Chęć uczenia się"
+        "Chęć uczenia się",
+        "Podstawowa znajomość przepisów podatkowych",
+        "Umiejętność pracy z danymi liczbowymi",
+        "Znajomość podstaw ekonomii",
+        "Podstawowa znajomość rynków finansowych",
+        "Umiejętność organizacji pracy"
       ],
       certifications: [
-        "Licencjat/magisterium w dziedzinie finansów, rachunkowości lub pokrewnych"
+        "Licencjat/magisterium w dziedzinie finansów, rachunkowości lub pokrewnych",
+        "Kursy online z podstaw finansów",
+        "Certyfikat Microsoft Excel (poziom podstawowy)",
+        "Kursy z podstaw rachunkowości",
+        "Podstawowe szkolenia z analizy finansowej",
+        "Wprowadzenie do Fintech",
+        "Podstawy ESG w finansach",
+        "Wprowadzenie do analizy danych finansowych"
       ]
     },
     {
@@ -52,10 +64,27 @@ const financeCareerData = {
         "Zdolność do pracy pod presją czasu",
         "Umiejętność prezentacji danych finansowych",
         "Samodzielność w realizacji zadań",
-        "Umiejętność zarządzania czasem"
+        "Umiejętność zarządzania czasem",
+        "Znajomość systemów ERP (np. SAP, Oracle)",
+        "Umiejętność przygotowywania raportów finansowych",
+        "Znajomość przepisów podatkowych",
+        "Umiejętność analizy przepływów pieniężnych",
+        "Podstawowa znajomość zarządzania ryzykiem",
+        "Umiejętność pracy z bazami danych",
+        "Znajomość języka SQL na poziomie podstawowym",
+        "Podstawowa znajomość technologii Fintech",
+        "Świadomość zasad ESG w finansach",
+        "Podstawowa znajomość narzędzi do automatyzacji procesów finansowych"
       ],
       certifications: [
-        "Rozpoczęcie przygotowań do certyfikatów branżowych (np. CFA poziom 1)"
+        "Rozpoczęcie przygotowań do certyfikatów branżowych (np. CFA poziom 1)",
+        "Certyfikat Microsoft Excel (poziom zaawansowany)",
+        "Kursy z zakresu analizy finansowej",
+        "Szkolenia z modelowania finansowego",
+        "Certyfikaty z obsługi systemów finansowych",
+        "Fintech Fundamentals Certification",
+        "Podstawy zarządzania ryzykiem finansowym",
+        "Certyfikaty z zakresu zgodności regulacyjnej"
       ]
     },
     {
@@ -78,12 +107,27 @@ const financeCareerData = {
         "Zdolności negocjacyjne",
         "Umiejętność budowania relacji z klientami/interesariuszami",
         "Umiejętność mentorowania młodszych pracowników",
-        "Umiejętność podejmowania decyzji"
+        "Umiejętność podejmowania decyzji",
+        "Zaawansowana znajomość systemów ERP",
+        "Umiejętność tworzenia prognoz finansowych",
+        "Znajomość metod wyceny przedsiębiorstw",
+        "Umiejętność analizy wskaźnikowej",
+        "Znajomość instrumentów finansowych",
+        "Umiejętność optymalizacji podatkowej",
+        "Znajomość międzynarodowych standardów sprawozdawczości",
+        "Umiejętność analizy rentowności",
+        "Znajomość języka SQL na poziomie średniozaawansowanym",
+        "Podstawowa znajomość programowania (Python, R)",
+        "Umiejętność wizualizacji danych finansowych"
       ],
       certifications: [
         "CFA (Chartered Financial Analyst) - w trakcie",
         "ACCA (Association of Chartered Certified Accountants)",
-        "FMVA (Financial Modeling & Valuation Analyst)"
+        "FMVA (Financial Modeling & Valuation Analyst)",
+        "Certyfikaty z zakresu zarządzania ryzykiem",
+        "Szkolenia z zakresu Business Intelligence",
+        "Certyfikaty z zakresu analizy danych",
+        "Kursy z zakresu wyceny przedsiębiorstw"
       ]
     },
     {
@@ -106,12 +150,29 @@ const financeCareerData = {
         "Umiejętność zarządzania zespołem",
         "Strategiczne myślenie",
         "Umiejętność podejmowania trudnych decyzji",
-        "Umiejętność komunikacji z zarządem i interesariuszami"
+        "Umiejętność komunikacji z zarządem i interesariuszami",
+        "Znajomość zarządzania kapitałem obrotowym",
+        "Umiejętność zarządzania relacjami z inwestorami",
+        "Znajomość międzynarodowych przepisów finansowych",
+        "Umiejętność zarządzania projektami finansowymi",
+        "Znajomość zarządzania kosztami",
+        "Umiejętność tworzenia strategii finansowej",
+        "Znajomość zarządzania płynnością finansową",
+        "Umiejętność analizy efektywności inwestycji",
+        "Znajomość zarządzania ryzykiem walutowym",
+        "Umiejętność zarządzania relacjami z bankami",
+        "Znajomość corporate governance",
+        "Umiejętność zarządzania kryzysowego",
+        "Znajomość zarządzania wartością przedsiębiorstwa"
       ],
       certifications: [
         "CFA (Chartered Financial Analyst) - ukończony",
         "CIMA (Chartered Institute of Management Accountants)",
-        "MBA ze specjalizacją finansową"
+        "MBA ze specjalizacją finansową",
+        "Certyfikaty z zakresu zarządzania projektami (np. PMP)",
+        "Certyfikaty z zakresu zarządzania ryzykiem (np. FRM)",
+        "Szkolenia z zakresu przywództwa",
+        "Certyfikaty z zakresu fuzji i przejęć"
       ]
     },
     {
@@ -133,12 +194,30 @@ const financeCareerData = {
         "Umiejętność zarządzania zmianą",
         "Umiejętność budowania i realizacji strategii",
         "Umiejętność zarządzania kryzysowego",
-        "Umiejętność budowania relacji na poziomie C-level"
+        "Umiejętność budowania relacji na poziomie C-level",
+        "Znajomość globalnych trendów finansowych",
+        "Umiejętność zarządzania ryzykiem strategicznym",
+        "Znajomość zarządzania wartością dla akcjonariuszy",
+        "Umiejętność zarządzania złożonymi strukturami finansowymi",
+        "Znajomość międzynarodowych rynków kapitałowych",
+        "Umiejętność zarządzania relacjami z inwestorami instytucjonalnymi",
+        "Znajomość zarządzania finansami w kontekście międzynarodowym",
+        "Umiejętność zarządzania transformacją finansową",
+        "Znajomość innowacji finansowych",
+        "Umiejętność zarządzania compliance",
+        "Znajomość zarządzania reputacją finansową firmy",
+        "Umiejętność budowania strategicznych partnerstw finansowych",
+        "Znajomość zarządzania ryzykiem reputacyjnym",
+        "Umiejętność zarządzania relacjami z regulatorami"
       ],
       certifications: [
         "Zaawansowane certyfikaty branżowe",
         "MBA z prestiżowej uczelni",
-        "Doświadczenie międzynarodowe"
+        "Doświadczenie międzynarodowe",
+        "Executive education z prestiżowych uczelni biznesowych",
+        "Certyfikaty z zakresu zarządzania strategicznego",
+        "Szkolenia z zakresu przywództwa transformacyjnego",
+        "Certyfikaty z zakresu corporate governance"
       ]
     },
     {
@@ -160,12 +239,32 @@ const financeCareerData = {
         "Umiejętność kształtowania kultury organizacyjnej",
         "Umiejętność budowania długoterminowej strategii",
         "Umiejętność zarządzania reputacją firmy",
-        "Umiejętność współpracy z zarządem i radą nadzorczą"
+        "Umiejętność współpracy z zarządem i radą nadzorczą",
+        "Znajomość zarządzania wartością przedsiębiorstwa na poziomie strategicznym",
+        "Umiejętność zarządzania złożonymi strukturami korporacyjnymi",
+        "Znajomość zarządzania ryzykiem systemowym",
+        "Umiejętność zarządzania w warunkach niepewności",
+        "Znajomość zarządzania innowacjami finansowymi",
+        "Umiejętność zarządzania transformacją cyfrową w finansach",
+        "Znajomość zarządzania zrównoważonym rozwojem w kontekście finansowym",
+        "Umiejętność zarządzania relacjami z kluczowymi interesariuszami",
+        "Znajomość zarządzania kryzysowego na poziomie organizacji",
+        "Umiejętność zarządzania fuzjami i przejęciami na poziomie strategicznym",
+        "Znajomość zarządzania kapitałem intelektualnym",
+        "Umiejętność zarządzania zmianą na poziomie organizacji",
+        "Znajomość zarządzania ryzykiem reputacyjnym na poziomie globalnym",
+        "Umiejętność zarządzania relacjami z regulatorami na poziomie międzynarodowym",
+        "Znajomość zarządzania odpowiedzialnością społeczną w kontekście finansowym"
       ],
       certifications: [
         "Najwyższe certyfikaty branżowe",
         "Doświadczenie w zarządzaniu na poziomie międzynarodowym",
-        "Uznanie w branży finansowej"
+        "Uznanie w branży finansowej",
+        "Executive MBA z prestiżowych uczelni",
+        "Członkostwo w radach nadzorczych",
+        "Certyfikaty z zakresu zarządzania strategicznego na poziomie C-level",
+        "Szkolenia z zakresu przywództwa transformacyjnego na najwyższym poziomie",
+        "Certyfikaty z zakresu corporate governance dla członków zarządu"
       ]
     }
   ],
@@ -181,7 +280,21 @@ const financeCareerData = {
         "Zarządzanie kapitałem obrotowym",
         "Wycena przedsiębiorstw",
         "Analiza opłacalności inwestycji (ROI)",
-        "Znajomość strukturyzacji transakcji"
+        "Znajomość strukturyzacji transakcji",
+        "Zarządzanie płynnością finansową",
+        "Analiza wskaźnikowa",
+        "Modelowanie finansowe",
+        "Zarządzanie kosztami",
+        "Planowanie podatkowe",
+        "Analiza fuzji i przejęć",
+        "Zarządzanie relacjami z inwestorami",
+        "Znajomość rynków kapitałowych",
+        "Zarządzanie ryzykiem finansowym",
+        "Znajomość międzynarodowych standardów sprawozdawczości",
+        "Analiza scenariuszowa",
+        "Zarządzanie projektami finansowymi",
+        "Znajomość corporate governance",
+        "Zarządzanie wartością przedsiębiorstwa"
       ]
     },
     {
@@ -195,7 +308,21 @@ const financeCareerData = {
         "Zarządzanie ryzykiem kredytowym",
         "Znajomość przepisów bankowych",
         "Umiejętność oceny ryzyka",
-        "Znajomość procesów KYC (Know Your Customer)"
+        "Znajomość procesów KYC (Know Your Customer)",
+        "Zarządzanie portfelem kredytowym",
+        "Znajomość bankowości inwestycyjnej",
+        "Analiza rynków finansowych",
+        "Zarządzanie relacjami z klientami",
+        "Znajomość systemów bankowych",
+        "Zarządzanie płynnością bankową",
+        "Znajomość regulacji bankowych (Basel III/IV)",
+        "Analiza ryzyka operacyjnego",
+        "Zarządzanie aktywami i pasywami (ALM)",
+        "Znajomość instrumentów pochodnych",
+        "Zarządzanie ryzykiem rynkowym",
+        "Znajomość bankowości korporacyjnej",
+        "Analiza ryzyka systemowego",
+        "Znajomość fintech i innowacji bankowych"
       ]
     },
     {
@@ -209,7 +336,21 @@ const financeCareerData = {
         "Znajomość kontroli wewnętrznych",
         "Umiejętność przeprowadzania testów kontroli",
         "Znajomość procedur compliance",
-        "Umiejętność dokumentowania procesów audytowych"
+        "Umiejętność dokumentowania procesów audytowych",
+        "Znajomość standardów rachunkowości",
+        "Umiejętność wykrywania oszustw finansowych",
+        "Znajomość zarządzania ryzykiem",
+        "Umiejętność przeprowadzania audytu IT",
+        "Znajomość przepisów podatkowych",
+        "Umiejętność analizy procesów biznesowych",
+        "Znajomość zarządzania jakością",
+        "Umiejętność przeprowadzania audytu operacyjnego",
+        "Znajomość zarządzania ryzykiem compliance",
+        "Umiejętność przeprowadzania due diligence",
+        "Znajomość audytu śledczego",
+        "Umiejętność przeprowadzania audytu zgodności",
+        "Znajomość zarządzania ryzykiem nadużyć",
+        "Umiejętność przeprowadzania audytu efektywności"
       ]
     },
     {
@@ -223,7 +364,21 @@ const financeCareerData = {
         "Zarządzanie ryzykiem walutowym i stopy procentowej",
         "Znajomość rynków pieniężnych",
         "Umiejętność prognozowania przepływów pieniężnych",
-        "Znajomość systemów płatności"
+        "Znajomość systemów płatności",
+        "Zarządzanie relacjami bankowymi",
+        "Znajomość instrumentów pochodnych",
+        "Zarządzanie inwestycjami krótkoterminowymi",
+        "Znajomość zarządzania długiem",
+        "Umiejętność zarządzania kapitałem obrotowym",
+        "Znajomość międzynarodowych systemów płatności",
+        "Zarządzanie ryzykiem kontrahenta",
+        "Znajomość zarządzania gotówką w grupie kapitałowej",
+        "Umiejętność optymalizacji struktury finansowania",
+        "Znajomość nettingu i poolingu",
+        "Zarządzanie ryzykiem płynności",
+        "Znajomość systemów treasury",
+        "Umiejętność zarządzania relacjami z agencjami ratingowymi",
+        "Znajomość zarządzania ryzykiem kraju"
       ]
     },
     {
@@ -237,7 +392,21 @@ const financeCareerData = {
         "Znajomość narzędzi BI (Tableau, Power BI)",
         "Umiejętność budowania modeli predykcyjnych",
         "Znajomość uczenia maszynowego w kontekście finansowym",
-        "Umiejętność wizualizacji danych finansowych"
+        "Umiejętność wizualizacji danych finansowych",
+        "Znajomość SQL i baz danych",
+        "Umiejętność analizy szeregów czasowych",
+        "Znajomość statystyki finansowej",
+        "Umiejętność budowania dashboardów analitycznych",
+        "Znajomość technik data mining",
+        "Umiejętność analizy sentymentu rynkowego",
+        "Znajomość modelowania ryzyka",
+        "Umiejętność analizy anomalii finansowych",
+        "Znajomość technik NLP w analizie finansowej",
+        "Umiejętność budowania systemów rekomendacyjnych",
+        "Znajomość analizy sieci społecznościowych w kontekście finansowym",
+        "Umiejętność pracy z danymi nieustrukturyzowanymi",
+        "Znajomość technik optymalizacji portfela",
+        "Umiejętność budowania modeli scoringowych"
       ]
     },
     {
@@ -251,7 +420,21 @@ const financeCareerData = {
         "Znajomość strategii inwestycyjnych",
         "Umiejętność zarządzania portfelem",
         "Znajomość rynków kapitałowych",
-        "Umiejętność analizy trendów rynkowych"
+        "Umiejętność analizy trendów rynkowych",
+        "Znajomość teorii wyceny aktywów",
+        "Umiejętność zarządzania ryzykiem inwestycyjnym",
+        "Znajomość alokacji aktywów",
+        "Umiejętność analizy makroekonomicznej",
+        "Znajomość rynków derywatów",
+        "Umiejętność budowania strategii tradingowych",
+        "Znajomość zarządzania funduszami inwestycyjnymi",
+        "Umiejętność analizy behawioralnej rynków",
+        "Znajomość alternatywnych klas aktywów",
+        "Umiejętność zarządzania ryzykiem systematycznym",
+        "Znajomość arbitrażu i strategii market-neutral",
+        "Umiejętność analizy efektywności rynku",
+        "Znajomość algorytmicznego tradingu",
+        "Umiejętność zarządzania ryzykiem płynności rynkowej"
       ]
     }
   ],
@@ -265,7 +448,17 @@ const financeCareerData = {
         "Oracle Financials",
         "Microsoft Dynamics",
         "QuickBooks",
-        "Sage"
+        "Sage",
+        "Workday Financial Management",
+        "NetSuite",
+        "Xero",
+        "FreshBooks",
+        "Hyperion",
+        "Anaplan",
+        "BlackLine",
+        "Kyriba",
+        "Adaptive Insights",
+        "OneStream"
       ]
     },
     {
@@ -278,7 +471,16 @@ const financeCareerData = {
         "Power BI",
         "QlikView",
         "Bloomberg Terminal",
-        "Reuters Eikon"
+        "Reuters Eikon",
+        "FactSet",
+        "Capital IQ",
+        "Alteryx",
+        "Looker",
+        "Domo",
+        "ThoughtSpot",
+        "Sisense",
+        "MicroStrategy",
+        "IBM Cognos Analytics"
       ]
     },
     {
@@ -291,7 +493,38 @@ const financeCareerData = {
         "R",
         "VBA",
         "MATLAB",
-        "SAS"
+        "SAS",
+        "Scala",
+        "Java",
+        "C++",
+        "Julia",
+        "Power Query",
+        "DAX",
+        "Apache Spark",
+        "TensorFlow",
+        "Hadoop"
+      ]
+    },
+    {
+      id: "risk-management",
+      title: "Narzędzia zarządzania ryzykiem",
+      titleEn: "Risk Management Tools",
+      items: [
+        "RiskMetrics",
+        "Algorithmics",
+        "SAS Risk Management",
+        "IBM OpenPages",
+        "Moody's Analytics",
+        "Finastra",
+        "Murex",
+        "Calypso",
+        "Kamakura",
+        "Quantifi",
+        "ActivePivot",
+        "AxiomSL",
+        "Numerix",
+        "Imagine Software",
+        "Prometeia"
       ]
     }
   ],
@@ -306,7 +539,16 @@ const financeCareerData = {
         "CIMA (Chartered Institute of Management Accountants)",
         "FRM (Financial Risk Manager)",
         "FMVA (Financial Modeling & Valuation Analyst)",
-        "CPA (Certified Public Accountant)"
+        "CPA (Certified Public Accountant)",
+        "CMA (Certified Management Accountant)",
+        "CFP (Certified Financial Planner)",
+        "CIPM (Certificate in Investment Performance Measurement)",
+        "CAIA (Chartered Alternative Investment Analyst)",
+        "ACA (Associate Chartered Accountant)",
+        "CQF (Certificate in Quantitative Finance)",
+        "PRM (Professional Risk Manager)",
+        "CGMA (Chartered Global Management Accountant)",
+        "CTP (Certified Treasury Professional)"
       ]
     },
     {
@@ -318,7 +560,51 @@ const financeCareerData = {
         "CTP (Certified Treasury Professional) - dla specjalistów skarbu",
         "CFP (Certified Financial Planner) - dla doradców finansowych",
         "CAIA (Chartered Alternative Investment Analyst) - dla specjalistów inwestycyjnych",
-        "PMP (Project Management Professional) - dla zarządzających projektami finansowymi"
+        "PMP (Project Management Professional) - dla zarządzających projektami finansowymi",
+        "CISA (Certified Information Systems Auditor) - dla audytorów systemów IT",
+        "CRISC (Certified in Risk and Information Systems Control) - dla specjalistów zarządzania ryzykiem IT",
+        "CFF (Certified in Financial Forensics) - dla specjalistów śledztw finansowych",
+        "CVA (Certified Valuation Analyst) - dla specjalistów wyceny przedsiębiorstw",
+        "CDFA (Certified Divorce Financial Analyst) - dla doradców finansowych w sprawach rozwodowych",
+        "ChFC (Chartered Financial Consultant) - dla doradców finansowych",
+        "CPWA (Certified Private Wealth Advisor) - dla doradców zamożnych klientów",
+        "CAMS (Certified Anti-Money Laundering Specialist) - dla specjalistów AML",
+        "EA (Enrolled Agent) - dla specjalistów podatkowych",
+        "CFS (Certified Fund Specialist) - dla specjalistów funduszy inwestycyjnych"
+      ]
+    },
+    {
+      id: "banking",
+      title: "Certyfikaty bankowe",
+      titleEn: "Banking Certifications",
+      items: [
+        "CAMS (Certified Anti-Money Laundering Specialist)",
+        "CBA (Certified Bank Auditor)",
+        "CFSA (Certified Financial Services Auditor)",
+        "CRCM (Certified Regulatory Compliance Manager)",
+        "AAP (Accredited ACH Professional)",
+        "CTFA (Certified Trust and Financial Advisor)",
+        "CISP (Certified IRA Services Professional)",
+        "CSOP (Certified Securities Operations Professional)",
+        "CRMA (Certification in Risk Management Assurance)",
+        "CCM (Certified Cash Manager)"
+      ]
+    },
+    {
+      id: "data-analytics",
+      title: "Certyfikaty analityki danych",
+      titleEn: "Data Analytics Certifications",
+      items: [
+        "Microsoft Certified: Data Analyst Associate",
+        "Tableau Desktop Specialist",
+        "Tableau Desktop Certified Associate",
+        "Tableau Desktop Certified Professional",
+        "Google Data Analytics Professional Certificate",
+        "IBM Data Science Professional Certificate",
+        "SAS Certified Data Scientist",
+        "Cloudera Certified Associate Data Analyst",
+        "Alteryx Designer Core Certification",
+        "Power BI Certified Data Analyst"
       ]
     }
   ]

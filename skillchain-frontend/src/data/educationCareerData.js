@@ -26,12 +26,18 @@ const educationCareerData = {
         "Znajomość podstaw oceniania",
         "Umiejętność motywowania uczniów",
         "Znajomość technologii edukacyjnych",
-        "Umiejętność współpracy z rodzicami"
+        "Umiejętność współpracy z rodzicami",
+        "Podstawowa znajomość nauczania hybrydowego",
+        "Umiejętność wykorzystania narzędzi cyfrowych w edukacji",
+        "Podstawowa znajomość personalizacji nauczania"
       ],
       certifications: [
         "Licencjat/magisterium z pedagogiki lub kierunku przedmiotowego",
         "Przygotowanie pedagogiczne",
-        "Kwalifikacje nauczycielskie"
+        "Kwalifikacje nauczycielskie",
+        "Certyfikat nauczania online",
+        "Podstawy edukacji cyfrowej",
+        "Certyfikat z obsługi platform edukacyjnych"
       ]
     },
     {

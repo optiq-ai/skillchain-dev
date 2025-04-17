@@ -373,15 +373,22 @@ Fullstack developer to specjalista, który posiada umiejętności zarówno front
   - React - Meta React Professional Certificate
   - Angular - Angular Certification Program
   - JavaScript - Professional JavaScript Developer (OpenJS Foundation)
+  - Web Components Certification
+  - Advanced CSS Architecture
 - **Backend**:
-  - AWS Certified Developer
+  - AWS Certified Developer - Associate
   - Microsoft Certified: Azure Developer Associate
   - Oracle Certified Professional, Java SE Developer
   - MongoDB Certified Developer
+  - Certified Kubernetes Administrator (CKA)
+  - Google Associate Cloud Engineer
+  - Certified Ethical Hacker (CEH)
 - **Fullstack**:
   - Full Stack Web Developer Nanodegree (Udacity)
   - IBM Full Stack Cloud Developer
   - Meta Full-stack Engineer Certificate
+  - AWS Certified Solutions Architect
+  - CompTIA Security+ (dla aspektów bezpieczeństwa)
 
 ### Trendy i przyszłość zawodu
 - **JAMstack** - JavaScript, API, Markup stack
@@ -391,6 +398,11 @@ Fullstack developer to specjalista, który posiada umiejętności zarówno front
 - **Edge Computing** - przetwarzanie bliżej użytkownika
 - **AI-assisted coding** - programowanie wspomagane sztuczną inteligencją
 - **Low-code/No-code** - platformy umożliwiające tworzenie aplikacji bez kodowania
+- **Containerization & Orchestration** - Docker, Kubernetes, zarządzanie mikroserwisami
+- **DevSecOps** - integracja bezpieczeństwa w cyklu DevOps
+- **Quantum Computing** - programowanie dla komputerów kwantowych
+- **Web3 & Blockchain Development** - tworzenie aplikacji zdecentralizowanych
+- **Green Coding** - optymalizacja kodu pod kątem efektywności energetycznej
 
 ### Organizacje branżowe i społeczności
 - **Meet.js** - społeczność JavaScript w Polsce
