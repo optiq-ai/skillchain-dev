@@ -15,7 +15,8 @@ const CareerPathsPage = () => {
   const careerCategories = careerPaths.map(path => ({
     id: path.id,
     icon: path.icon,
-    color: path.color
+    color: path.color,
+    title: path.title
   }));
 
   useEffect(() => {
@@ -36,12 +37,6 @@ const CareerPathsPage = () => {
       : true;
     return matchesCategory && matchesSearch;
   });
-
-  // Funkcja do określania poziomu trudności na podstawie ścieżki kariery
-  const getDifficulty = (path) => {
-    // Domyślnie zwracamy 3 (średni poziom trudności)
-    return 3;
-  };
 
   // Funkcja do pobierania pozycji z ścieżki kariery
   const getPositions = (path) => {
@@ -90,6 +85,9 @@ const CareerPathsPage = () => {
       case 'sync-alt': return '⚙️';
       case 'brain': return '🧠';
       case 'money-bill-wave': return '💰';
+      case 'bullhorn': return '📌';
+      case 'users': return '📌';
+      case 'graduation-cap': return '📌';
       default: return '📌';
     }
   };
@@ -101,21 +99,19 @@ const CareerPathsPage = () => {
         
         {/* Wyszukiwarka */}
         <Form className="search-form mb-4">
-          <Form.Group>
-            <Form.Control
-              type="text"
-              placeholder={t('common.search')}
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-          </Form.Group>
+          <Form.Control
+            type="text"
+            placeholder={t('common.search')}
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
         </Form>
         
-        {/* Filtry kategorii */}
-        <div className="category-filters mb-4">
+        {/* Filtry kategorii - kompaktowy układ */}
+        <div className="category-filters-compact mb-4">
           <Button
             variant={activeCategory === '' ? 'primary' : 'outline-primary'}
-            className="category-filter-btn me-2 mb-2"
+            className="category-filter-btn"
             onClick={() => setActiveCategory('')}
           >
             Wszystkie
@@ -125,12 +121,16 @@ const CareerPathsPage = () => {
             <Button
               key={category.id}
               variant={activeCategory === category.id ? 'primary' : 'outline-primary'}
-              className="category-filter-btn me-2 mb-2"
+              className="category-filter-btn"
               onClick={() => setActiveCategory(category.id)}
-              style={{ borderColor: category.color, color: activeCategory === category.id ? 'white' : category.color }}
+              style={{ 
+                borderColor: category.color, 
+                color: activeCategory === category.id ? 'white' : category.color,
+                backgroundColor: activeCategory === category.id ? category.color : 'transparent'
+              }}
             >
               <span className="me-2">{renderIcon(category.icon)}</span>
-              {careerPaths.find(path => path.id === category.id)?.title || category.id}
+              {category.title}
             </Button>
           ))}
         </div>
@@ -139,51 +139,43 @@ const CareerPathsPage = () => {
         <Row>
           {filteredPaths.length > 0 ? (
             filteredPaths.map(path => (
-              <Col key={path.id} md={6} lg={4} className="mb-4">
-                <Card className="career-path-card">
+              <Col key={path.id} md={4} className="mb-4">
+                <Card className="career-path-card-simple">
                   <Card.Body>
-                    <div 
-                      className="path-icon"
-                      style={{ backgroundColor: path.color }}
-                    >
-                      {renderIcon(path.icon)}
+                    <div className="d-flex align-items-center mb-3">
+                      <div 
+                        className="path-icon-simple"
+                        style={{ backgroundColor: path.color }}
+                      >
+                        {renderIcon(path.icon)}
+                      </div>
+                      <h5 className="card-title mb-0 ms-3">{path.title}</h5>
                     </div>
-                    <Card.Title>{path.title}</Card.Title>
                     
-                    <div className="difficulty-indicator mb-3">
-                      <small>{t('common.experienceLevel')}:</small>
-                      <div className="difficulty-bars">
-                        {[...Array(5)].map((_, i) => (
-                          <div 
-                            key={i} 
-                            className={`difficulty-bar ${i < getDifficulty(path) ? 'active' : ''}`}
-                            style={{ backgroundColor: i < getDifficulty(path) ? path.color : 'var(--border-color)' }}
-                          />
+                    <div className="experience-level mb-3">
+                      <p className="text-muted mb-2">Poziom doświadczenia:</p>
+                      <div className="position-badges">
+                        {getPositions(path).map((position, index) => (
+                          <Badge 
+                            key={index} 
+                            bg="light" 
+                            text="dark"
+                            className="position-badge-simple mb-2"
+                          >
+                            {position}
+                          </Badge>
                         ))}
                       </div>
-                    </div>
-                    
-                    <div className="positions-list mb-3">
-                      {getPositions(path).map((position, index) => (
-                        <Badge 
-                          key={index} 
-                          bg="light" 
-                          text="dark"
-                          className="position-badge me-2 mb-2"
-                        >
-                          {position}
-                        </Badge>
-                      ))}
                     </div>
                     
                     <Button 
                       as={Link}
                       to={`/career-paths/${path.id}`}
                       variant="outline-primary"
-                      className="mt-2"
+                      className="view-details-btn"
                       style={{ borderColor: path.color, color: path.color }}
                     >
-                      {t('common.viewDetails')}
+                      Zobacz szczegóły
                     </Button>
                   </Card.Body>
                 </Card>
