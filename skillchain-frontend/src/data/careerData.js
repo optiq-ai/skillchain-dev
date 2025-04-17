@@ -7,6 +7,8 @@ import devopsPath from './devops_career_path.md';
 import aiMlPath from './ai_ml_career_path.md';
 import financeCareerData from './financeCareerData';
 import marketingCareerData from './marketingCareerData';
+import hrCareerData from './hrCareerData';
+import educationCareerData from './educationCareerData';
 
 const careerPaths = [
   {
@@ -82,6 +84,24 @@ const careerPaths = [
     icon: 'bullhorn',
     color: '#E91E63',
     data: marketingCareerData
+  },
+  {
+    id: 'hr',
+    title: 'Zasoby Ludzkie (HR)',
+    description: 'Ścieżka kariery w dziedzinie zarządzania zasobami ludzkimi, od asystenta HR po dyrektora personalnego (CHRO).',
+    path: null,
+    icon: 'users',
+    color: '#8E44AD',
+    data: hrCareerData
+  },
+  {
+    id: 'education',
+    title: 'Edukacja',
+    description: 'Ścieżka kariery w sektorze edukacji, od nauczyciela po dyrektora placówki edukacyjnej.',
+    path: null,
+    icon: 'graduation-cap',
+    color: '#FF5722',
+    data: educationCareerData
   }
 ];
 
