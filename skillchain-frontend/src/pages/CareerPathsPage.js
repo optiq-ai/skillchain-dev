@@ -4,7 +4,6 @@ import { Container, Row, Col, Card, Button, Form, Badge } from 'react-bootstrap'
 import { useLocation, Link } from 'react-router-dom';
 import './CareerPathsPage.css';
 import careerPaths from '../data/careerData';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const CareerPathsPage = () => {
   const { t } = useTranslation();
@@ -79,6 +78,22 @@ const CareerPathsPage = () => {
     }
   };
 
+  // Funkcja renderująca ikonę
+  const renderIcon = (iconName) => {
+    // Prosta funkcja renderująca emoji zamiast FontAwesome
+    switch(iconName) {
+      case 'network-wired': return '🌐';
+      case 'code': return '💻';
+      case 'database': return '🗄️';
+      case 'tasks': return '📊';
+      case 'shield-alt': return '🔒';
+      case 'sync-alt': return '⚙️';
+      case 'brain': return '🧠';
+      case 'money-bill-wave': return '💰';
+      default: return '📌';
+    }
+  };
+
   return (
     <div className="career-paths-page">
       <Container>
@@ -114,7 +129,7 @@ const CareerPathsPage = () => {
               onClick={() => setActiveCategory(category.id)}
               style={{ borderColor: category.color, color: activeCategory === category.id ? 'white' : category.color }}
             >
-              <FontAwesomeIcon icon={category.icon} className="me-2" />
+              <span className="me-2">{renderIcon(category.icon)}</span>
               {careerPaths.find(path => path.id === category.id)?.title || category.id}
             </Button>
           ))}
@@ -131,7 +146,7 @@ const CareerPathsPage = () => {
                       className="path-icon"
                       style={{ backgroundColor: path.color }}
                     >
-                      <FontAwesomeIcon icon={path.icon} />
+                      {renderIcon(path.icon)}
                     </div>
                     <Card.Title>{path.title}</Card.Title>
                     
